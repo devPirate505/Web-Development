@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title>Hello, world!</title>
+
+  <style>
+    body {
+      background-color: teal;
+    }
+
+    #testimonial-carousel .image-side img {
+      width: 80%;
+    }
+
+    #testimonial-carousel .carousel-indicators button {
+      text-indent: 0 !important;
+      opacity: 0 !important;
+      border-top: none !important;
+      background-color: transparent !important;
+      position: absolute;
+      pointer-events: none;
+      top: 2.1rem;
+    }
+
+    #testimonial-carousel .carousel-indicators .active {
+      opacity: 1 !important;
+      border: none !important;
+    }
+
+    #testimonial-carousel .carousel-control-prev,
+    #testimonial-carousel .carousel-control-next {
+      top: 20.3rem !important;
+    }
+
+    #testimonial-carousel .carousel-control-prev {
+      left: 27.7rem !important;
+    }
+
+    #testimonial-carousel .carousel-control-next {
+      right: 27.7rem !important;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div id="testimonial-carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#testimonial-carousel" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1">
+          1/4
+        </button>
+        <button type="button" data-bs-target="#testimonial-carousel" data-bs-slide-to="1"
+          aria-label="Slide 2">2/4</button>
+        <button type="button" data-bs-target="#testimonial-carousel" data-bs-slide-to="2"
+          aria-label="Slide 3">3/4</button>
+        <button type="button" data-bs-target="#testimonial-carousel" data-bs-slide-to="3"
+          aria-label="Slide 4">4/4</button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="100000">
+          <div class="row">
+            <div class="col-4 image-side">
+              <img src="images/client1.png" width="80%" alt="">
+            </div>
+
+            <div class="col-6">
+              <p>
+                Rajavel is an expert in Angular and Laravel engineer, bring passion and enthusiasm to his projects. He offered both deep technical insight as well as a incredible commitment to the project. I would highly recommend that anyone can hire Rajavel to do the projects. It was a pleasure to work with him on a daily basis and I look forward to our future projects together.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="100000">
+          <img src="images/02.jpg" class="d-block" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="100000">
+          <img src="images/03.jpg" class="d-block" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="100000">
+          <img src="images/05.jpg" class="d-block" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
