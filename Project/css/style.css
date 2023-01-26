@@ -1,0 +1,997 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    color: #000000;
+    overflow-x: hidden;
+}
+
+.offset:before{
+    display: block;
+    content: "";
+    height: 4rem;
+    margin-top: -4rem;
+}
+
+.h5, h5{
+    font-size: 1.1rem !important;
+}
+
+/*-------------- Home Section ---------*/
+
+.navbar{
+    font-size: 0.9rem;
+    font-weight: 500;
+    min-height: 5.5rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.logo img{
+    width: 151px;
+}
+
+
+.navbar-light .navbar-nav .nav-link{
+    color: #202020;
+}
+
+.nav-item{
+    padding-left: 10px;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #2292A4 !important;
+}
+
+.nav{
+    flex-wrap: nowrap;
+}
+
+.nav-separator{
+    width: 1px;
+    height: 50px;
+    background-color: grey;
+}
+
+.nav a{
+    padding: 0;
+}
+
+.phone, .email{
+    color: black !important;
+    font-size: 0.9rem;
+}
+
+.phone{
+    min-width: 9.9rem;
+}
+
+.email{
+    min-width: 12.4rem;
+}
+
+@media screen and (max-width: 359px){
+    .nav{
+        flex-direction: column;
+    }
+}
+
+#btn-contact{
+    background: #2292A4;
+    color: #FFFFFF;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 2px solid #2292A4;
+    font-size: 0.9rem;
+    padding: 8px 9px;
+    min-width: 120px;
+    margin-top: 6px;
+    letter-spacing: 0px;
+    transition: 0.3s;
+    position: relative;
+    top: 1px;
+}
+
+#btn-contact:hover,
+#btn-contact:focus{
+    background: transparent;
+    border: 2px solid #2292A4;
+    color: #2292A4;
+    font-size: 0.9rem;
+    padding: 7px 9px;
+}
+
+@media screen and (min-width: 1800px){
+    
+    .logo img{
+        width: 192px !important;
+    }
+
+    .navbar{
+        font-size: 1.4em;
+    }
+
+    .phone, .email{
+        font-size: 1.4rem;
+        margin-right: 2rem;
+    }
+    
+    .phone img, .email img{
+        width: 33px;
+    }
+
+    #btn-contact{
+        border-radius: 10px;
+        font-size: 1.4rem;
+        padding: 9px 10px;
+        padding-bottom: 12px;
+    }
+
+    #btn-contact:hover,
+    #btn-contact:focus{
+    font-size: 1.4rem;
+    padding: 7px 9px;
+    }
+
+}
+
+@media screen and (max-width: 1230px){
+    #btn-contact{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .nav-item{
+        padding-left: initial;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .nav-separator{
+        display: none;
+    }
+}
+
+.landing {
+    position: relative;
+    width: 100%;
+    height: 53.5rem;
+}
+
+.home-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 5.5em;
+    left: 0;
+    width: 100%;
+    height: 769px;
+    background: black;
+    z-index: -1;
+}
+.home-inner {
+    position: relative;
+    display: table;
+    top: 0;
+    left: 0;
+    background-image: url(../images/home-bg.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    will-change: transform;
+    opacity: 0.7;
+    
+}
+
+@media screen and (min-width: 1900px){
+
+    .landing {
+        height: 76.9rem;
+    }
+    
+    .home-wrap {
+        height: 76.9rem;
+    }
+
+}
+
+.btn-primary{
+    background-color: #2292A4;
+    border: 2px solid #2292A4 !important;
+    letter-spacing: 1px;
+    border-radius: 7px;
+    padding: .5rem 2rem;
+}
+  
+.btn-primary:focus,
+.btn-primary:hover{
+    background-color: transparent;
+    border-color: #FFFFFF !important;
+    box-shadow: none;
+}
+
+.caption{
+    color: #FFFFFF;
+    position: absolute;
+    top: 30%;
+    left: 2%;
+    text-align: center;
+    
+}
+
+.caption p{
+    font-size: 1.3rem;
+}
+
+ @media screen and (min-width: 1243px){
+    .caption{
+        color: #FFFFFF;
+        position: absolute;
+        text-align: left !important;
+        top: 35%;
+        left: 45%;
+      }
+    
+      .caption p{
+          width: 34rem;
+          font-size: 1.3rem;
+      }
+    
+}
+
+/*-------------- End Home Section ---------*/
+
+/*-------------- Services Section ---------*/
+
+.body-container{
+    width: 80%;
+    margin: auto;
+}
+
+#services{
+    margin-top: 7rem;
+    padding-top: 5rem;
+}
+
+.heading{
+    font-size: 2.5em;
+    text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+    margin-bottom: 5rem;
+}
+
+.service-row{
+    font-size: small;
+    font-weight: 700;
+}
+
+.service-card{
+    background: #F4F6F7;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 1441px){
+    
+    .service-row{
+        width: 77rem;
+        margin: auto;
+    }
+    
+    .services-link{
+        width: 77rem;
+        margin: auto;
+        margin-left: -2rem;
+    }
+
+}
+
+@media screen and (min-width: 2240px) and (max-width: 2259px){
+    
+    .service-row{
+        margin-left: -3.3rem;
+    }
+
+    .services-link{
+        margin-left: -5rem;
+    }
+
+
+}
+
+@media screen and (min-width: 2260px) and (max-width: 2269px){
+    
+    .service-row{
+        margin-left: -3.4rem;
+    }
+
+    .services-link{
+        margin-left: -5rem;
+    }
+
+
+}
+
+@media screen and (min-width: 2270px) and (max-width: 2299px){
+    
+    .service-row{
+        margin-left: -3rem;
+    }
+
+    .services-link{
+        margin-left: -5rem;
+    }
+
+
+}
+
+@media screen and (min-width: 2300px) and (max-width: 2339px){
+    
+    .service-row{
+        margin-left: -2.4rem;
+    }
+
+    .services-link{
+        margin-left: -4.5rem;
+    }
+
+
+}
+
+@media screen and (min-width: 2340px) and (max-width: 2349px){
+    
+    .service-row{
+        margin-left: -2rem;
+    }
+
+    .services-link{
+        margin-left: -4rem;
+    }
+
+
+}
+
+@media screen and (min-width: 2350px) and (max-width: 2369px){
+    
+    .service-row{
+        margin-left: -1.8rem;
+    }
+
+    .services-link{
+        margin-left: -4rem;
+    }
+
+
+}
+
+@media screen and (min-width: 2370px) and (max-width: 2399px){
+    
+    .service-row{
+        margin-left: -1.4rem;
+    }
+
+    .services-link{
+        margin-left: -3.2rem;
+    }
+
+
+}
+
+@media screen and (min-width: 2400px) and (max-width: 2439px){
+    
+    .service-row{
+        margin-left: -1rem;
+    }
+
+    .services-link{
+        margin-left: -3.2rem;
+    }
+
+
+}
+
+@media screen and (width:768px){
+    
+    .services-link{
+        margin-left: -2rem;
+    }
+
+}
+
+@media screen and (min-width: 1401px){
+    .service-card{
+        width: 17rem;
+    }
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1400px){
+    .service-card{
+        width: 16rem;
+    }
+
+}
+
+.services-link a{
+    text-decoration: none !important;
+    border-bottom: 1px solid #2292A4;
+    padding-bottom: 0.7rem;
+    color: #2292A4;
+    font-weight: 600;
+
+}
+
+.services-link a:hover{
+    
+    color: #303030;
+    border-bottom: 2px solid #303030;
+
+}
+
+@media screen and (min-width: 2240px){
+
+     .service-row{
+        width: 77rem;
+     }
+
+    .body-container{
+        width: 50%;
+    }
+    
+
+}
+
+
+/*-------------- End Services Section ---------*/
+
+/*-------------- Techonlogies Section ---------*/
+
+#technologies{
+    background-color: #FAFAFA;
+}
+
+
+
+#technologies .carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 12rem;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-right: 0;
+    margin-bottom: 1rem;
+    margin-left: 0;
+    list-style: none;
+
+}
+
+@media screen and (max-width: 825px){
+    
+    #technologies .carousel-indicators {
+
+        bottom: 13rem;
+
+    }
+}
+
+@media screen and (max-width: 767px){
+    
+    #technologies .carousel-indicators {
+
+        bottom: 30rem;
+
+    }
+}
+
+#technologies .carousel-indicators button{
+    text-indent: 0 !important;
+    height: auto !important;
+    width: 100px !important;
+    border-top: none !important;  
+    border-bottom: none !important; 
+    background: transparent !important;
+    color: #303030;
+    opacity: 1 !important;
+    padding-bottom: 0.5rem !important;
+    font-weight: 700;
+    margin-right: 1rem;
+}
+
+#technologies .carousel-indicators .active{
+    color: #2292A4;
+    border-bottom: 2px solid #2292A4 !important;
+}
+#technologies .carousel-inner{
+    max-width: 56rem;
+    margin: 11rem auto 4rem;
+}
+
+/*-------------- End Techonlogies Section ---------*/
+
+/*-------------- Testimonial Section ---------*/
+
+#testimonial-carousel .carousel-indicators button {
+    text-indent: 0 !important;
+    opacity: 0 !important;
+    border-top: none !important;
+    background-color: transparent !important;
+    position: absolute;
+    pointer-events: none;
+    
+    color: black;
+    transition: 0s !important;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+#testimonial-carousel .carousel-indicators{
+    bottom: -4.1rem;
+}
+
+#testimonial-carousel .carousel-indicators .active {
+    opacity: 1 !important;
+    border: none !important;
+}
+
+
+#testimonial-carousel .carousel-item .image-side{
+    text-align: center;
+    margin-bottom: -7px;
+}
+
+#testimonial-carousel .carousel-control-prev,
+    #testimonial-carousel .carousel-control-next {
+        top: 119.5% !important;
+    }
+
+@media screen and (min-width: 1108px){
+    #testimonial-carousel .carousel-control-prev,
+    #testimonial-carousel .carousel-control-next {
+        top: 121% !important;
+    }
+
+}
+
+@media screen and (min-width: 1294px){
+    #testimonial-carousel .carousel-control-prev,
+    #testimonial-carousel .carousel-control-next {
+        top: 123% !important;
+    }
+
+}
+
+#testimonial-carousel .carousel-control-prev {
+    left: 37.9% !important;
+}
+  
+#testimonial-carousel .carousel-control-prev .carousel-control-prev-icon {
+    background: none !important;
+}
+  
+#testimonial-carousel .carousel-control-prev .carousel-control-prev-icon img{
+    width: 20px;
+}
+
+  
+#testimonial-carousel .carousel-control-next {
+    right: 37.9% !important;
+}
+
+#testimonial-carousel .carousel-control-next .carousel-control-next-icon {
+    background: none !important;
+}
+
+#testimonial-carousel .carousel-control-next .carousel-control-next-icon img{
+    width: 20px;
+}
+
+#testimonial-carousel .testimonials-description{
+    font-style: normal;
+
+    letter-spacing: 0.05em;
+    text-indent: 2px;
+
+    color: #404040;
+
+}
+#testimonial-carousel .client-name{
+    font-size: 1.5rem;
+    line-height: 37px;
+    font-weight: 900;    
+    text-indent: 2px;
+    
+    color: #303030;
+    
+}
+
+#testimonial-carousel .client-designation{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 27px;
+    letter-spacing: 0.04em;
+    text-indent: 2px;
+    
+    color: #C4C4C4;
+}
+
+@media screen and (max-width: 991px){
+    
+    #testimonial-carousel .carousel-indicators {
+        bottom: -1.1rem;
+    }
+
+    #testimonial-carousel .carousel-control-prev,
+    #testimonial-carousel .carousel-control-next {
+        top: 102% !important;
+    }
+
+    #testimonial-carousel .testimonials-text{
+        padding-top: 0 !important;
+        width: 92%;
+        height: 23rem;
+        font-size: 15px;
+    }
+
+    #testimonial-carousel .carousel-control-next {
+        right: 30% !important;
+    }
+
+    #testimonial-carousel .carousel-control-prev {
+        left: 30% !important;
+    }
+    
+    #testimonial-carousel .testimonials-text .client-designation{
+        line-height: 0;
+    }
+}
+
+@media screen and (min-width: 461px) and (max-width: 991px){
+    
+    #testimonial-carousel .carousel-control-prev,
+    #testimonial-carousel .carousel-control-next {
+        top: 102.5% !important;
+    }
+}
+
+@media screen and (min-width: 380px) and (max-width: 460px){
+    
+    #testimonial-carousel .testimonials-text{
+        height: 25rem;
+    }
+
+    #testimonial-carousel .carousel-control-prev,
+    #testimonial-carousel .carousel-control-next {
+        top: 102.5% !important;
+    }
+}
+
+@media screen and (max-width: 414px){
+    
+    #testimonial-carousel .testimonials-text{
+        height: 27rem;
+    }
+
+}
+
+@media screen and (max-width: 379px){
+    
+    #testimonial-carousel .testimonials-text{
+        height: 30rem;
+        margin-left: 0px !important;
+    }
+}
+
+@media screen and (max-width: 349px){
+    
+    #testimonial-carousel .testimonials-text{
+        height: 32rem;
+        margin-left: 0px !important;
+    }
+}
+
+@media screen and (max-width: 324px){
+    
+    #testimonial-carousel .testimonials-text{
+        height: 34rem;
+        margin-left: 0.5px !important;
+    }
+
+    #testimonial-carousel .carousel-inner .image-side img{
+        width: 250px;
+    }
+}
+
+/*-------------- End Testimonial Section ---------*/
+
+/*-------------- Team Section ---------*/
+
+.team-container{
+    width: 85%;
+    margin: auto;
+}
+
+#team{
+    background-color: #FAFAFA;
+    margin-top: 8rem;
+}
+
+#team h3{
+    font-size: 34px;
+    line-height: 41px;
+    letter-spacing: 0.06em;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+#team h5{
+    font-size: 20px;
+}
+
+.team-para{
+    color: #606060;
+}
+
+.triangle{
+	width: 0;
+	height: 0;
+	border-left: 25px solid white;
+	border-top: 25px solid transparent;
+    position: absolute;
+    top: 13.2rem;
+}
+
+.card{
+    box-shadow: -2px 2px 6px 1px rgb(0 0 0 / 25%);
+    width: 245px !important;
+}
+
+.card img{
+    background: #FAFAFA;
+}
+
+.card img:nth-child(2){
+    background: transparent;
+}
+
+.card-body{
+    color: #2292A4;
+    padding: 1rem 1.2rem;
+}
+.box{
+    width: 15px;
+    height: 15px;
+    border: 2px solid #89A1E6;
+    display: inline-block;
+    border-radius: 2px;
+    vertical-align: text-bottom;
+}
+
+.card-body h5{
+    margin-bottom: 2px;
+    font-size: 15px !important;
+}
+
+.card-body h6{
+    margin-bottom: 1rem;
+    font-size: 15px !important;
+}
+
+.card-body span{
+    vertical-align: middle;
+}
+.card-text{
+    color: #303030;
+}
+
+@media screen and (min-width: 992px) and  (max-width: 1199px) {
+    .card-2{
+        position: relative;
+        right: 1.4rem;
+    }
+    
+    .card-3{
+        position: relative;
+        top: 1.5rem;
+        right: 7rem;
+    }
+    
+    .card-4{
+        position: relative;
+        bottom: 15rem;
+        right: 25rem;
+    }
+
+    #team{
+        background-color: #FAFAFA;
+        margin-bottom: 0rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .card-2{
+        position: relative;
+        top: 3.5rem;
+        right: 1.4rem;;
+    }
+    
+    .card-3{
+        position: relative;
+        left: 2.3rem;
+    }
+    
+    .card-4{
+        position: relative;
+        top: 4rem;
+        left: 1rem;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .card-2{
+        position: relative;
+        top: 3.5rem;
+        right: 3.4rem;;
+    }
+    
+    .card-3{
+        position: relative;
+        left: 2.7rem;
+    }
+    
+    .card-4{
+        position: relative;
+        top: 4rem;
+        left: -1rem;
+    }
+}
+
+
+/*-------------- End Team Section ---------*/
+
+/*-------------- Contact Section ---------*/
+
+#contact h4{
+    letter-spacing: 0.1em;
+}
+
+#contact .linebreak{
+    width: 80%;
+    height: 1px;
+    background: #000000;
+}
+
+#contact input,
+#contact textarea{
+    border: 1px solid #2292A4;
+    border-radius: 3px;
+}
+
+#file-input{
+    display: none;
+}
+
+.input-label{
+    border: 1px solid #2292A4;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 6px 3px 6px 15px;  
+    margin-left: unset;
+} 
+
+.attach-icon{
+    width: 15px;
+    margin-right: 0;
+}
+
+.input-label img{
+    width: 15px;
+}
+
+
+#contact .form-check small{
+    font-size: 14px;
+    font-style: italic;
+}
+
+#contact .form-check small a{
+    text-decoration: none;
+    color: #202020;
+    font-weight: 700;
+}
+
+.form-check-input:focus{
+    box-shadow: none;
+}
+
+@media screen and (max-width: 575px) {
+    
+    .input-label{
+        justify-content: space-around;
+    }
+}
+
+#contact .contact-button{
+    border-radius: 3px;
+    padding: 0.7rem 2rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#contact .contact-button:hover,
+#contact .contact-button:focus{
+    color: #2292A4;
+    border: 2px solid #2292A4 !important;
+}
+
+/*-------------- End Contact Section ---------*/
+
+/*-------------- Footer ---------*/
+
+footer{
+    background: #2292A4;
+}
+
+footer a{
+    color: white !important;
+    text-decoration: none;
+}
+
+
+
+#copyright{
+    color: #FFFFFF80;
+}
+
+footer .navbar-nav{
+    margin-top: 2rem;
+}
+
+footer .nav-item{
+    padding: 0;
+}
+
+footer h3{
+    letter-spacing: 1px;
+}
+
+footer .footer-links a{
+    width: max-content;
+}
+
+footer .caller-white,
+footer .email-white,
+footer .map-marker{
+    width: 10%;
+    margin: auto 0;
+}
+
+@media screen and (min-width: 992px){
+    footer .footer-links{
+        padding-left: 4rem;
+    }
+
+    #copyright{
+        margin-left: 1.3rem !important;
+    }
+}
+
+@media screen and (max-width: 1400px){
+    .logo-detail{
+        width: 79%;
+    }
+}    
+
+@media screen and (max-width: 1200px){
+    .logo-detail{
+        width: 98%;
+    }
+}    
+/*-------------- End Footer ---------*/
