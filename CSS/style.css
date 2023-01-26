@@ -1,0 +1,65 @@
+h1 {
+			
+				display: inline-block;
+			
+			}
+			
+			#menu {
+			
+				display: inline-block;
+				margin-left: 400px;			
+			}
+			
+			#menu ul {
+			
+				list-style: none;
+				padding: 0;
+			
+			}
+			
+			#menu ul li {
+			
+					display: inline-block;
+					background: maroon;
+					padding: 5px;
+					padding-right:45px;
+					transition: 1s;
+			
+			}
+			
+			#menu ul li:hover {
+			
+				background: green;
+				padding: 5px;
+				padding-left: 45px;
+			
+			}
+			
+			#menu ul li a {
+			
+				color: white;
+				text-decoration: none;
+				font-family: verdana;
+			
+			}
+			
+			#menu ul li:hover ul {
+			
+				display: block;
+			
+			}
+			
+			#menu ul li ul {
+			
+				width: 150px;
+				border: 1px solid green;
+				position: absolute;
+				display: none;
+			
+			}
+			
+			#menu ul li ul li {
+			
+				display: block;
+			
+			}

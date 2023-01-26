@@ -1,0 +1,136 @@
+<html>
+
+	<head>
+	
+		<title>Practice</title>
+		
+		<style>
+		
+			#menu {
+			
+				background: grey;
+			
+			}
+			
+			#menu ul{
+			
+				list-style: none;
+				padding: 0;
+			
+			}
+			
+			#menu ul li {
+			
+				display: inline-block;
+				background: maroon;
+				padding: 5px;
+				padding-right: 45px;
+				transition: 1s;
+				
+			}	
+			
+			#menu ul li:hover {
+			
+				background: green;
+				padding: 5px;
+				padding-left: 45px;
+			
+			}
+			
+			#menu ul li a{
+				
+				text-decoration: none;
+				color: white;
+				font-family: verdana;
+				
+			}
+			
+			#menu ul li:hover ul{
+			
+				display: block;
+			
+			}
+			
+			#menu ul li ul{
+			
+				width: 200px;
+				border: 1px solid green;
+				position: absolute;
+				display: none;
+			
+			}
+			
+			#menu ul li ul li{
+			
+				display: block;
+			
+			}
+			
+			.loading{
+			
+				border: 10px solid lightgrey;
+				width: 100px;
+				height: 100px;
+				border-radius: 50%;
+				margin: auto;
+				margin-top: 200px;
+				border-right-color: grey;
+				animation: test 1s infinite ; 
+			}
+			
+			@keyframes test{
+			
+				0% {
+				
+					transform: rotate(0deg);
+				
+				}
+				
+				100%{
+				
+					transform: rotate(360deg);
+				
+				}
+			
+			}
+			
+		</style>
+	
+	</head>
+	
+	<body>
+	
+		<h1> Welcome to the website </h1>
+		
+		<div id='menu'>
+		
+			<ul>
+			
+				<li> <a href="#">Home </a></li>
+				<li> <a href="#">Services </a></li>
+				<li> <a href="#">About </a></li>
+				<li> <a href="#">Branches </a>
+				
+					<ul>
+						
+						<li> <a href="#">Islamabad </a></li>
+						<li> <a href="#">Karachi </a></li>
+						<li> <a href="#">Lahore </a></li>
+						<li> <a href="#">Peshawar </a></li>
+					
+					</ul>	
+				
+				</li>
+				<li> <a href="#">Contacts </a></li>
+			
+			</ul>
+		
+		</div>
+		
+		<div class='loading'>
+		
+		</div>
+		
+	</body>
+
+</html>
