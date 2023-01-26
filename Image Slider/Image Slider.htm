@@ -1,0 +1,90 @@
+<html>
+
+	<head>
+	
+		<title>Image Slider</title>
+		
+		<link rel='stylesheet' href='css/slider.css'>
+	</head>
+	
+	<body>
+	
+		<h1>
+		Image Slider
+		</h1>
+
+		<div class='sliderbox'>
+
+			<div class='slides'>
+			
+				<img src='images/slide1.jpg' width='100%' alt=''/>
+				<img src='images/slide2.jpg' width='100%' alt=''/>
+				<img src='images/slide3.jpg' width='100%' alt=''/>
+				<img src='images/slide4.jpg' width='100%' alt=''/>
+			
+			</div>
+			
+			<div class='indicators'>
+			
+				<span id='btn1' class='active'></span>
+				<span id='btn2'></span>
+				<span id='btn3'></span>
+				<span id='btn4'></span>
+			
+			</div>
+			
+		</div>
+		
+		<script>
+			
+			let slides = document.querySelector('.slides') ;
+			let btn1 = document.querySelector('#btn1') ;
+			let btn2 = document.querySelector('#btn2') ;
+			let btn3 = document.querySelector('#btn3') ;
+			let btn4 = document.querySelector('#btn4') ;
+			
+			btn1.onclick = function(){
+			
+				slides.style.transform = 'translateX(0px)';
+				btn1.classList.add('active');
+				btn2.classList.remove('active');
+				btn3.classList.remove('active');
+				btn4.classList.remove('active');
+			
+			}
+			
+			btn2.onclick = function(){
+			
+				slides.style.transform = 'translateX(-100%)';
+				btn2.classList.add('active');
+				btn1.classList.remove('active');
+				btn3.classList.remove('active');
+				btn4.classList.remove('active');
+			
+			}
+			
+			btn3.onclick = function(){
+			
+				slides.style.transform = 'translateX(-200%)';
+				btn3.classList.add('active');
+				btn1.classList.remove('active');
+				btn2.classList.remove('active');
+				btn4.classList.remove('active');
+			
+			}
+			
+			btn4.onclick = function(){
+			
+				slides.style.transform = 'translateX(-300%)';
+				btn4.classList.add('active');
+				btn1.classList.remove('active');
+				btn2.classList.remove('active');
+				btn3.classList.remove('active');
+			
+			}
+				
+		</script>
+	
+	</body>
+
+</html>	
